@@ -56,3 +56,7 @@ console.log(x);
 console.log(ageJohn < ageSara); // dzięki temu, możemy sprawdzić, czy konkretny warunek jest prawdą
 const isFullAge = ageSara >= 18;
 
+//LECTURE: Operator Precedence
+let a, b;
+a = b = 25 - 10 - 5;
+console.log(a, b); 
