@@ -16,3 +16,20 @@ let continent = 'Europe';
 let population = '40';
 console.log(country, continent, population);
 
+// LECTURE: Data Types
+javascriptIsFun='Yes!!!';//aby zmienić typ zmiennej wystarczy przypisać do niej inną wartość
+console.log(typeof javascriptIsFun); 
+
+//LECTURE: let, const and var
+let age = 30;
+age= 32;//nadpisanie zmiennej inną wartością
+console.log(age);
+
+const birthYear = 2002; // zmienna, której nie da się zmienić
+var job = 'programmer';
+job = 'teacher';
+
+var language = 'polish';
+language = 'english';
+console.log(language);
+
