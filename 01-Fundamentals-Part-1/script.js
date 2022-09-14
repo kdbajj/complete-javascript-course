@@ -33,3 +33,18 @@ var language = 'polish';
 language = 'english';
 console.log(language);
 
+//LECTURE: Basic Operators
+const now = 2050;
+const ageJohn = 2050 - 1990;
+const ageSara = 2050-2002;
+console.log(ageSara, ageJohn/1, 2** 3); // 2**3 oznacza 2 do potęgi 3 = 2*2*2
+
+const myFirstName = 'Karolina';
+const myLastName = 'Dbaj';
+console.log(myFirstName + ' '+ myLastName);
+
+let x = 10 + 5;
+x += 10;// x = x + 10 = 25
+x *= 4;// x= x * 4 = 100
+x++;// x = x + 1
+console.log(x);
