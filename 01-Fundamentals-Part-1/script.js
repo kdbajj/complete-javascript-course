@@ -21,11 +21,11 @@ javascriptIsFun = "Yes!!!"; //aby zmienić typ zmiennej wystarczy przypisać do 
 console.log(typeof javascriptIsFun);
 
 //LECTURE: let, const and var
-let age = 30;
-age = 32; //nadpisanie zmiennej inną wartością
-console.log(age);
+//let age = 30;
+//age = 32; //nadpisanie zmiennej inną wartością
+//console.log(age);
 
-const birthYear = 2002; // zmienna, której nie da się zmienić
+//const birthYear = 2002; // zmienna, której nie da się zmienić
 var job = "programmer";
 job = "teacher";
 
@@ -98,3 +98,23 @@ console.log(karolinaNew);
 console.log(`String with 
 multiple 
 lines`);
+
+// Taking Decisions: if / else Statements
+const age = 19;
+const isOldEnough =  age >= 18;
+
+if (isOldEnough){
+    console.log(`Sarah can start driving license!!! 🚗`);
+} else {
+    console.log(`Sarah can't start driving license 😭`);
+}
+
+const birthYear = 1991;
+let century;
+
+if (birthYear <= 2000 ){
+    century = 20;
+} else { 
+     century = 21;
+}
+console.log(century);
