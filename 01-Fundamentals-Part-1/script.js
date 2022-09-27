@@ -61,3 +61,24 @@ let a, b;
 a = b = 25 - 10 - 5; // a = b = 10
 console.log(a, b); 
 console.log(ageJohn + ageSara / 2);
+
+//Coding Challenge #1\
+
+//1
+const markHeight = 1.69;
+const markMass = 78;
+
+const johnHeight = 1.88;
+const johnMass = 85;
+
+//2
+markBMI = markMass / markHeight ** 2;
+johnBMI = johnMass / johnHeight ** 2;
+console.log(markBMI,johnBMI);
+
+//3
+let markHigherBMI;
+
+if (markBMI>johnBMI)
+    markHigherBMI = true;
+    console.log(markHigherBMI);
