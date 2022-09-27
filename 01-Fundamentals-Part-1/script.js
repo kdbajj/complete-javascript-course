@@ -136,5 +136,14 @@ if(markBMI>johnBMI){
     console.log(`John's BMI ${johnBMI} is higher than Mark's ${markBMI}`); 
 }
 
+// Type Conversion and Coercion
 
+//type conversion
+const inputYear='1991';
+console.log(Number (inputYear) + 18);// konwertujemy ze string na liczbę
 
+console.log(String (23));//konwertujemy na string
+
+//type coercion
+(console.log(`I'm ${20} years old`));
+console.log(`223`*`2`);
