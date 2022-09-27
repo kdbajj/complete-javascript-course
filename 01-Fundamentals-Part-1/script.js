@@ -58,5 +58,6 @@ const isFullAge = ageSara >= 18;
 
 //LECTURE: Operator Precedence
 let a, b;
-a = b = 25 - 10 - 5;
+a = b = 25 - 10 - 5; // a = b = 10
 console.log(a, b); 
+console.log(ageJohn + ageSara / 2);
