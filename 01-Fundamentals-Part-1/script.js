@@ -147,3 +147,16 @@ console.log(String (23));//konwertujemy na string
 //type coercion
 (console.log(`I'm ${20} years old`));
 console.log(`223`*`2`);
+
+//Truthy and Falsy Values
+ console.log(Boolean (0));
+ console.log(Boolean (undefined));
+ console.log(Boolean ('Jonas'));
+ console.log(Boolean ({}));
+
+ let height;//jest undefined
+ if (height){
+    console.log('Yaaaaay! Height is defined');
+ }else{
+    console.log(`Height isn't defined!`);//undefined is falsy value (0)
+ }
