@@ -41,9 +41,9 @@ const ageJohn = 2050 - 1990;
 const ageSara = 2050 - 2002;
 console.log(ageSara, ageJohn, 2 ** 3); // 2**3 oznacza 2 do potęgi 3 = 2*2*2
 
-const myFirstName = "Karolina";
-const myLastName = "Dbaj";
-console.log(myFirstName + " " + myLastName);
+//const myFirstName = "Karolina";
+//const myLastName = "Dbaj";
+//console.log(myFirstName + " " + myLastName);
 
 // Assignment operators
 let x = 10 + 5;
@@ -81,4 +81,20 @@ let markHigherBMI;
 
 if (markBMI>johnBMI)
     markHigherBMI = true;
-    console.log(markHigherBMI);
+    console.log(markHigherBMI);// const markBMI = (markBMI>johnBMI)
+
+//Strings and Template Literals
+
+const myFirstName = 'Karolina';
+const myJob = 'student';
+const myBirthYear = 2002;
+const year = 2022;
+
+const karolina = "I'm " + myFirstName + ', a ' + (year -myBirthYear) + ' years old ' + myJob + '!';
+console.log(karolina);
+
+const karolinaNew = `I'm ${myFirstName}, a ${year - myBirthYear} years old ${myJob}!`;
+console.log(karolinaNew);
+console.log(`String with 
+multiple 
+lines`);
