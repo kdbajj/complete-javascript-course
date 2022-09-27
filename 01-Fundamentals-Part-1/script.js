@@ -118,3 +118,23 @@ if (birthYear <= 2000 ){
      century = 21;
 }
 console.log(century);
+
+//Coding Challenge #2
+
+//1
+if (markBMI>johnBMI){
+    console.log(`Mark's BMI is higher than John's!`);
+} else {
+    console.log(`John's BMI is higher than Mark's!`);
+}
+
+//2
+if(markBMI>johnBMI){
+    console.log(`Mark's BMI ${markBMI} is higher than John's ${johnBMI}`);
+
+}else{
+    console.log(`John's BMI ${johnBMI} is higher than Mark's ${markBMI}`); 
+}
+
+
+
