@@ -191,3 +191,28 @@ if (shouldDrive){
     else{
         console.log(`Someone else should drive...`)
     }
+
+//Coding Challenge #3
+
+coalasAvarageScore = (88 + 91 + 110)/3;
+dolphinsAvarageScore = (96 + 89 + 108)/3;
+const minimumScore=100;
+
+let isMinimum;
+if ((coalasAvarageScore && dolphinsAvarageScore) >=100) minimumScore = true;
+if (minimumScore >= 100)  isMinimum = true;
+
+if (isMinimum = true){
+    if (coalasAvarageScore>dolphinsAvarageScore){
+        console.log(`Coalas are winners!!!🏆`);}
+        else if (coalasAvarageScore<dolphinsAvarageScore){
+            console.log(`Dolphins are the winners!!!🏆`)
+        }
+        else if(coalasAvarageScore === dolphinsAvarageScore){
+            console.log(`There was a draw! :O`)
+        }
+}else {
+    console.log(`Both teams had score lower than 100 :((`);
+}
+
+
