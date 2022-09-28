@@ -166,12 +166,28 @@ console.log(`223`*`2`);
   if (age === 18) console.log('You just became an adult! :D (strict)');//=== takie samo
   if (age ==18) console.log('You just became an adult! :D (loose)');
 
-  const favourite = Number(prompt (`What's your favourite number???`));
-  console.log(favourite);
-  console.log(typeof favourite);
+ // const favourite = Number(prompt (`What's your favourite number???`));
+  //console.log(favourite);
+  //console.log(typeof favourite);
 
-  if (favourite === 23) {
-    console.log(`Cool!! 23 is really amazing number!`);
-  } else {
-    console.log(`That's great!`)
-  }
+  //if (favourite === 23) {
+    //console.log(`Cool!! 23 is really amazing number!`);
+  //} else {
+    //console.log(`That's great!`)
+  //}
+
+  //Logical Operators
+const hasDriversLicense = true;//A
+const hasGoodVision = true;//B
+const isTired = false;
+
+console.log(hasDriversLicense && hasGoodVision && isTired);// jest fałszywe(wynika to z logicznych wartości)
+
+const shouldDrive = hasDriversLicense && hasGoodVision && !isTired;
+
+if (shouldDrive){
+    console.log(`Sarah is able to drive!`);
+}
+    else{
+        console.log(`Someone else should drive...`)
+    }
