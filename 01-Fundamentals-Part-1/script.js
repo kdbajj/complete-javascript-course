@@ -100,8 +100,8 @@ multiple
 lines`);
 
 // Taking Decisions: if / else Statements
-const age = 19;
-const isOldEnough =  age >= 18;
+const sarahAge = 19;
+const isOldEnough =  sarahAge >= 18;
 
 if (isOldEnough){
     console.log(`Sarah can start driving license!!! 🚗`);
@@ -160,3 +160,18 @@ console.log(`223`*`2`);
  }else{
     console.log(`Height isn't defined!`);//undefined is falsy value (0)
  }
+
+ //Equality Operators: == vs. ===
+  const age = '18';
+  if (age === 18) console.log('You just became an adult! :D (strict)');//=== takie samo
+  if (age ==18) console.log('You just became an adult! :D (loose)');
+
+  const favourite = Number(prompt (`What's your favourite number???`));
+  console.log(favourite);
+  console.log(typeof favourite);
+
+  if (favourite === 23) {
+    console.log(`Cool!! 23 is really amazing number!`);
+  } else {
+    console.log(`That's great!`)
+  }
