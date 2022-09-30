@@ -220,7 +220,7 @@ if (isMinimum = true){
 const day = 'thursday';
 
 switch(day) {
-    case 'monday':// day === 'monday'
+        case 'monday':// day === 'monday'
         console.log('Plan course structure');
         console.log('Go to coding meet up');
             break;
@@ -252,3 +252,6 @@ else if (day === 'friday') console.log('Record videos');
 else if (day === 'saturday' || day === 'sunday') console.log('Enjoy the weekend :D');
 else console.log('Not a valid day!');
 
+//Statements and Expressions
+
+Statements and Expressions
