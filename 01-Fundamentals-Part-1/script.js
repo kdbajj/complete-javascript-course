@@ -254,4 +254,28 @@ else console.log('Not a valid day!');
 
 //Statements and Expressions
 
-Statements and Expressions
+console.log(`I'm ${2037-1991} years old`);
+
+//The Conditional (Ternary) Operator
+ 
+const age1 = 113;
+age1 >= 18 ? console.log (`I like to drink wine 🍷`) :
+console.log (`I like to drink water 💦`);
+
+const drink = age1 >= 18 ? 'wine🍷' : 'water';
+console.log(drink);
+
+let drink2
+if(age>= 18) {
+    drink2 = 'wine';
+} else drink2 = 'water';
+console.log(drink2);
+console.log(`I like to drink ${age1 >= 18 ? 'wine' : 'water'}`);
+
+//Coding Challenge #4
+
+bill = 430;
+tip = bill >= 50 && bill <= 300 ? ((bill * 15 )/ 100 ) : ((bill * 20 )/100); 
+console.log(tip);
+
+console.log((`The bil was ${bill}, the tip was ${tip}, and the total value ${bill + tip}`));
