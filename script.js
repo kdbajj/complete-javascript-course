@@ -1,2 +1,8 @@
-liczba = prompt('Podaj swoją ulubioną liczbę :D');
-liczba >100 ? console.log('super') : console.log('mega wow');
+'use strict';
+ let hasDriversLicense = false;
+ const passTest = true;
+
+ if (passTest) hasDriversLicense = true;
+ if (hasDriversLicense) console.log(`I can drive :D`);
+
+ //Functions
