@@ -82,11 +82,11 @@ console.log(fruitProcessor(2,3));
 
 //Reviewing Functions 
 
-const calcAge = function(birthYear){
+/*const calcAge = function(birthYear){
     return 2022 - birthYear;
 }
 
-const yearsUntilRetirement = function (birthYear, firstName) {
+ const yearsUntilRetirement = function (birthYear, firstName) {
 
     const age = calcAge(birthYear);
     const retirement = 65 - age;
@@ -102,6 +102,7 @@ const yearsUntilRetirement = function (birthYear, firstName) {
    // return `${firstName} retires in ${retirement} years.`;
 }
 console.log(yearsUntilRetirement(1888, 'John'));
+*/
 
 //Coding Challenge #1
 
@@ -129,4 +130,41 @@ const checkWinner = function (avgCoalas, avgDolphins){
 }
 checkWinner(teamCoalas,teamDolphins);
 
+// Introduction to Arrays
 
+const friend1 = 'Michael';
+const friend2 = 'John';
+const friend3 = 'John';
+
+const friends = ['Michael', 'John', 'Peter'];
+console.log(friends);
+
+
+
+console.log(friends[0]);
+console.log(friends[2]);
+
+console.log(friends.length);
+console.log(friends[friends.length -1]);
+
+friends[2] = 'Jay';
+console.log(friends);
+
+let firstName = 'karolina';
+const karolina = [firstName, 'dbaj', 2022-2002, 'student',friends];
+console.log(karolina); 
+
+// Exercise
+const calcAge = function(birthYear){
+    return 2022 - birthYear;
+}
+
+const years = [1990, 1930, 1232, 1999];
+
+const age = calcAge(years[0]);
+const age11 = calcAge(years[1]);
+const age22 = calcAge(years[2]);
+console.log(age11,age22,age);
+
+const ages = [calcAge(years[0]),calcAge(years[1]),calcAge(years[2])];
+console.log(ages);
