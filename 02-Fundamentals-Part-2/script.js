@@ -98,7 +98,35 @@ const yearsUntilRetirement = function (birthYear, firstName) {
         console.log(`${firstName} has already retired. :)`);
         return -1;
     }
-
+    
    // return `${firstName} retires in ${retirement} years.`;
 }
 console.log(yearsUntilRetirement(1888, 'John'));
+
+//Coding Challenge #1
+
+const calcAverage = (score1, score2, score3) => (score1,score2, score3)/3;
+
+let teamDolphins = calcAverage(44, 23, 71);
+let teamCoalas = calcAverage(65, 54,49);
+console.log(teamCoalas, teamDolphins);
+
+
+const checkWinner = function (avgCoalas, avgDolphins){
+
+   if (avgCoalas >= 2 * avgDolphins){
+       console.log(`The winner is team Coalas!!!! They win ${avgCoalas} vs ${avgDolphins}.`);
+       
+   } else if(avgDolphins >= 2 * avgCoalas ){
+    console.log(`The winner is team Dolphins!!!! They win ${avgDolphins} vs ${avgCoalas}.`);
+   
+   return teamCoalas,teamDolphins;
+   }
+   else {
+    console.log(`No one won`);
+   }
+  
+}
+checkWinner(teamCoalas,teamDolphins);
+
+
