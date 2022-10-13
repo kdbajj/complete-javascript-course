@@ -227,3 +227,13 @@ console.log(bills, tips);
 // 4
 const total = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
 console.log(total);
+
+// Introduction to Objects
+
+const karolinaArray = [
+  "Karolina",
+  "Dbaj",
+  2022 - 2002,
+  "student",
+  ["Michael", "Peter", "Steven"],
+];
