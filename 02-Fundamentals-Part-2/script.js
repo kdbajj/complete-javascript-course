@@ -237,3 +237,36 @@ const karolinaArray = [
   "student",
   ["Michael", "Peter", "Steven"],
 ];
+
+const karolina1 = {
+  firstName: "Karolina",
+  lastName: "Dbaj",
+  age: 2022 - 2002,
+  job: "student",
+  friends: ["michael", "jonas", "adam"],
+};
+
+// Dot vs. Bracket Notation
+console.log(karolina1);
+console.log(karolina1.age);
+console.log(karolina1["age"]);
+
+const nameKey = "Name";
+//console.log(karolina["first" + nameKey]);
+//console.log(karolina["last" + nameKey]);
+
+//const interesedIn = prompt(
+//"What do you want to know about Karolina? Choose between firstName, lastName, age, job"
+//);
+//console.log(karolina1[interesedIn]);
+
+karolina1.location = "poland";
+karolina1["twitter"] = "@abc";
+console.log(karolina1);
+
+// challenge
+// "Jonas has 3 friends and his best friend is called Michael";
+
+console.log(
+  `${karolina1.firstName} has ${karolina1.friends.length} friends, and his best friend is called ${karolina1.friends[0]}`
+);
