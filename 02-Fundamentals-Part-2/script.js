@@ -238,15 +238,21 @@ const karolinaArray = [
   ["Michael", "Peter", "Steven"],
 ];
 
+// Dot vs. Bracket Notation
 const karolina1 = {
   firstName: "Karolina",
   lastName: "Dbaj",
-  age: 2022 - 2002,
+  birthYear: 2002,
   job: "student",
   friends: ["michael", "jonas", "adam"],
+  hasDriversLicense: true,
+
+  calcAge: function () {
+    console.log(this);
+    return 2037 - this.birthYear;
+  },
 };
 
-// Dot vs. Bracket Notation
 console.log(karolina1);
 console.log(karolina1.age);
 console.log(karolina1["age"]);
@@ -270,3 +276,53 @@ console.log(karolina1);
 console.log(
   `${karolina1.firstName} has ${karolina1.friends.length} friends, and his best friend is called ${karolina1.friends[0]}`
 );
+
+// Object Methods
+
+console.log(karolina1.calcAge(1991));
+console.log(karolina1["calcAge"](1991));
+
+console.log(karolina1.calcAge());
+console.log(karolina1.calcAge());
+console.log(karolina1.calcAge());
+console.log(karolina1.calcAge());
+
+// Coding challenge #3
+
+//1
+//2
+
+const Mark = {
+  fullName: "Mark Miller",
+  mass: 78,
+  height: 1.69,
+  calcBMI: function () {
+    this.BMI = this.mass / (this.height * this.height);
+    return this.BMI;
+  },
+};
+
+const John = {
+  fullName: "John Smith",
+  mass: 92,
+  height: 1.95,
+  calcBMI: function () {
+    this.BMI = this.mass / (this.height * this.height);
+    return this.BMI;
+  },
+};
+
+Mark.calcBMI();
+John.calcBMI();
+
+if (Mark.BMI > John.BMI) {
+  console.log(
+    `${Mark.fullName} BMI (${Mark.BMI}) is higher than John's! (${John.BMI})`
+  );
+} else {
+  if (Mark.BMI < John.BMI) {
+    console.log(
+      `${John.fullName} BMI (${John.BMI}) is higher than Mark's! (${Mark.BMI})`
+    );
+  }
+}
