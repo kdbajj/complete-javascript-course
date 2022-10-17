@@ -334,3 +334,33 @@ let k = 1;
 for (let rep = 1; rep <= 10; rep++, k++) {
   console.log(`Lifting weights repetition ${k}`);
 }
+
+// Looping Arrays, Breaking and Continuing
+
+const karolina2 = [
+  "Karolina",
+  "Dbaj",
+  2002,
+  "student",
+  ["michael", "jonas", "adam"],
+  true,
+];
+
+const types = [];
+
+for (let i = 0; i <= karolina2.length; i++) {
+  console.log(karolina2[i], typeof karolina2[i]);
+
+  // types[i] = typeof karolina2[i];
+  types.push(typeof karolina2[i]);
+}
+
+console.log(types);
+
+// continue and break
+console.log(`----Only strings`);
+for (let i = 0; i < karolina2.length; i++) {
+  if (typeof karolina2[i] != "string") continue; //gdy nie jest to string, reszta jest pomijana
+
+  console.log(karolina[i], typeof karolina2[i]);
+}
