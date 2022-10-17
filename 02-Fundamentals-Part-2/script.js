@@ -326,3 +326,11 @@ if (Mark.BMI > John.BMI) {
     );
   }
 }
+
+let k = 1;
+// Iteration: The for Loop
+
+// for loop keeps running while condition is true
+for (let rep = 1; rep <= 10; rep++, k++) {
+  console.log(`Lifting weights repetition ${k}`);
+}
