@@ -364,3 +364,17 @@ for (let i = 0; i < karolina2.length; i++) {
 
   console.log(karolina[i], typeof karolina2[i]);
 }
+
+// Looping Backwards and Loops in Loops
+
+for (let i = karolina2.length - 1; i >= 0; i--) {
+  console.log(i, karolina2[i]);
+}
+
+for (let exercise = 1; exercise <= 4; exercise++) {
+  console.log(`------starting excercise ${exercise}`);
+
+  for (let rep = 1; rep < 6; rep++) {
+    console.log(`Lifting weight repetition ${rep}💪`);
+  }
+}
