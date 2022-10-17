@@ -393,3 +393,33 @@ while (dice != 6) {
   dice = Math.trunc(Math.random() * 6) + 1;
   if (dice === 6) console.log(`Loop is about to end...`);
 }
+
+// Coding Challenge #4
+
+//1,2
+
+function calcTip(bill) {
+  return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0, 2;
+}
+let bill = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+let tips2 = [];
+let totals = [];
+
+for (let i = 0; i <= bill.length; i++) {
+  const tip = calcTip(bill[i]);
+  tips2.push(tip);
+  totals.push(tip + bill[i]);
+}
+
+console.log(bill, tips2, totals);
+
+// bonus
+
+const calcAverage1 = function (arr) {
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    sum = sum + arr[i];
+  }
+  return sum / arr.length;
+};
+console.log(calcAverage1(tips));
