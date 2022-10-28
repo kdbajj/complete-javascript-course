@@ -13,6 +13,9 @@ console.log((document.querySelector(".guess").value = 23));
 */
 
 //Handling Click Events
+
+const number = Math.random(10 - 20);
+
 document.querySelector(".check").addEventListener("click", function () {
   const guess = Number(document.querySelector(".guess").value);
   console.log(guess, typeof guess);
@@ -20,3 +23,5 @@ document.querySelector(".check").addEventListener("click", function () {
     document.querySelector(".message").textContent = "No number!🛑";
   }
 });
+
+// Implementing the Game Logic
