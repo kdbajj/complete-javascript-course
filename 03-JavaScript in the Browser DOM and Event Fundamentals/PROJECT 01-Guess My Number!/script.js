@@ -22,6 +22,7 @@ document.querySelector(".number").textContent = secretNumber;
 document.querySelector(".check").addEventListener("click", function () {
   const guess = Number(document.querySelector(".guess").value);
   console.log(guess, typeof guess);
+
   if (!guess) {
     document.querySelector(".message").textContent = "No number!🛑";
   } else if (guess === secretNumber) {
@@ -44,5 +45,3 @@ document.querySelector(".check").addEventListener("click", function () {
     document.querySelector(".score").textContent = 0;
   }
 });
-
-// Implementing the Game Logic
