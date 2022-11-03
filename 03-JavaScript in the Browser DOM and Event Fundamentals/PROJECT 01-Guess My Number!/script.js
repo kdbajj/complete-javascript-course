@@ -54,3 +54,4 @@ document.querySelector(".check").addEventListener("click", function () {
   }
 document.querySelector(".check").addEventListener("click") = XMLHttpRequestUpload
 })
+//dgfd
